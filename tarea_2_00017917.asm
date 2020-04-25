@@ -1,6 +1,6 @@
 	org 100h
 	
-	mov AX, 1d
+	mov AX, 1d ;aca empieza el ejercicio 1
 	add AX, 7d
 	add AX, 9d
 	add AX, 1d
@@ -34,7 +34,7 @@
 
 
 
-	mov AX, 2d
+	mov AX, 2d ;aca empieza el ejercicio 2
 	mov BX, 2d
 	mov CX, 0d
 	mov SI, 0d
@@ -53,6 +53,40 @@ check2: inc SI
 
 	cmp AX, 1000h
 	jb check2
+
+
+
+
+	mov AX, 0d ;aca empieza el ejercicio 3
+	mov BX, 1d
+	mov CX, 0d
+	mov SI, 0d
+	mov [220h], CX
+	mov [221h], BX
+
+chPoint:mov DX, BX
+	add DX, CX
+	mov AX, DX
+	mov [SI+222h], AX
+	inc SI
+	mov CX, BX 
+	mov BX, AX
+
+	cmp AX, 100h
+	jb chPoint
+
+chP2:   mov DX, BX
+	add DX, CX
+	mov AX, DX
+	inc SI
+	mov[SI+222h], AX
+	inc SI
+	mov CX, BX
+	mov BX, AX
+
+	cmp AX, 610d
+	jb chP2
+
 
 
 	int 20h
