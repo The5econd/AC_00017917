@@ -34,4 +34,25 @@
 
 
 
+	mov AX, 2d
+	mov BX, 2d
+	mov CX, 0d
+	mov SI, 0d
+
+check1:	mul BX
+ 	mov [SI+210h], AX
+	inc SI
+
+	cmp AX, 100h
+	jb check1
+
+check2: inc SI
+	mul BX
+	mov [SI+210h], AX
+	inc SI
+
+	cmp AX, 1000h
+	jb check2
+
+
 	int 20h
