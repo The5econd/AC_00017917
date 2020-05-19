@@ -56,8 +56,8 @@ m_cursr3:mov 	ah, 02h
 	int 	10h
 	ret
 
-phrase:	mov 	di, 29d
-lupi:	mov 	cl, [msg+di-29d]
+phrase:	mov 	di, 17d
+lupi:	mov 	cl, [msg+di-17d]
 	call    	m_cursr
 	call 	w_char
 	inc	di
@@ -65,8 +65,8 @@ lupi:	mov 	cl, [msg+di-29d]
 	jb	lupi
 	ret
 
-phrase2:	mov 	di, 29d
-lupi2:	mov 	cl, [msg+di-29d]
+phrase2:	mov 	di, 05d
+lupi2:	mov 	cl, [msg+di-05d]
 	call    	m_cursr2
 	call 	w_char
 	inc	di
@@ -86,10 +86,10 @@ lupi3:	mov 	cl, [msg+di-29d]
 
 section .data
 msg	db 	"Texto de prueba "
-len 	equ	$-msg+29d
+len 	equ	$-msg+17d
 
 msg2	db 	"que se supone que hago "
-len2 	equ	$-msg2+29d
+len2 	equ	$-msg2+05d
 
 msg3	db 	"ta pisada la tarea "
 len3 	equ	$-msg3+29d
