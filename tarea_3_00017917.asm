@@ -66,20 +66,20 @@ lupi:	mov 	cl, [msg+di-17d]
 	ret
 
 phrase2:	mov 	di, 05d
-lupi2:	mov 	cl, [msg+di-05d]
+lupi2:	mov 	cl, [msg2+di-05d]
 	call    	m_cursr2
 	call 	w_char
 	inc	di
-	cmp 	di, len
+	cmp 	di, len2
 	jb	lupi2
 	ret
 
 phrase3:	mov 	di, 29d
-lupi3:	mov 	cl, [msg+di-29d]
+lupi3:	mov 	cl, [msg3+di-29d]
 	call    	m_cursr3
 	call 	w_char
 	inc	di
-	cmp 	di, len
+	cmp 	di, len3
 	jb	lupi3
 	ret
 
