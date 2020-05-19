@@ -85,11 +85,11 @@ lupi3:	mov 	cl, [msg3+di-29d]
 
 
 section .data
-msg	db 	"Texto de prueba "
+msg	db 	"Deje fisica 2 con 5.8 :("
 len 	equ	$-msg+17d
 
-msg2	db 	"que se supone que hago "
+msg2	db 	"y a un chero se la pasaron con 5.8 "
 len2 	equ	$-msg2+05d
 
-msg3	db 	"ta pisada la tarea "
+msg3	db 	"el iba con Grande y yo no :'v "
 len3 	equ	$-msg3+29d
