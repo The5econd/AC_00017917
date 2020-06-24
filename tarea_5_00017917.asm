@@ -7,22 +7,39 @@ section .text
 	xor 	si, si
 	xor 	di, di
 
-	mov 	si, 25d ; X -> Columna
-	mov 	di, 25d ; Y -> Fila
+	mov 	si, 100d ; X -> Columna
+	mov 	di, 50d ; Y -> Fila
 	call 	linea_h
-
-	mov 	si, 25d ; X -> Columna
-	mov 	di, 75d ; Y -> Fila
+	mov 	si, 100d ; X -> Columna
+	mov 	di, 150d ; Y -> Fila
 	call 	linea_h
-
-	mov	si, 25d ; X -> Columna
-	mov 	di, 25d ; Y -> Fila
+	mov	si, 120d ; X -> Columna
+	mov 	di, 150d ; Y -> Fila
 	call 	linea_v
-
-	mov	si, 75d ; X -> Columna
-	mov 	di, 25d ; Y -> Fila
+	mov	si, 120d ; X -> Columna
+	mov 	di, 110d ; Y -> Fila
 	call 	linea_v
-
+	mov	si, 150d ; X -> Columna
+	mov 	di, 110d ; Y -> Fila
+	call 	linea_v
+	mov	si, 150d ; X -> Columna
+	mov 	di, 90d ; Y -> Fila
+	call 	linea_v
+	mov	si, 120d ; X -> Columna
+	mov 	di, 90d ; Y -> Fila
+	call 	linea_v
+	mov	si, 120d ; X -> Columna
+	mov 	di, 70d ; Y -> Fila
+	call 	linea_v
+	mov	si, 170d ; X -> Columna
+	mov 	di, 70d ; Y -> Fila
+	call 	linea_v
+	mov	si, 170d ; X -> Columna
+	mov 	di, 50d ; Y -> Fila
+	mov	si, 1000d ; X -> Columna
+	mov 	di, 50d ; Y -> Fila
+	call 	linea_v
+	call 	linea_v
 	call 	kb		; Utilizamos espera de alguna tecla
 
 	int 	20h
